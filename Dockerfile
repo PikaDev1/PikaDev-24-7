@@ -13,8 +13,5 @@ RUN apt-get update && apt-get install -y ffmpeg
 # Copy the main.py file into the image
 COPY main.py .
 
-# Copy the "nightcore" folder into the image
-COPY nightcore /nightcore
-
 # Specify the command to run your application
 CMD ["python", "main.py"]
